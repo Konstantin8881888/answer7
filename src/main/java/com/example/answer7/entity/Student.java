@@ -1,5 +1,6 @@
 package com.example.answer7.entity;
 
+import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -18,5 +19,7 @@ public class Student {
     private String name;
 
     @Column(name = "age")
-    private int age;
+    @Nullable
+    private Integer age;
+
 }
